@@ -1,0 +1,30 @@
+<%@ page pageEncoding="UTF-8" %>
+<link href="${pageContext.request.contextPath}/css/service.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<nav data-bs-theme="dark" >
+    <div >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li>
+          <a class="nav-link active" href="home">Beta Diagnostics</a>
+        </li>
+        <li>
+          <a class="nav-link" href="OferteSiPromotii">Oferte si promotii</a>
+        </li>
+        <li>
+          <a class="nav-link" href="Consultatii">Consultatii</a>
+        </li>
+        <li>
+          <a class="nav-link" href="DespreNoi">Despre noi</a>
+        </li>
+        <li>
+          <a class="nav-link" href="Cariere">Cariere</a>
+        </li>
+        <li>
+          <a class="nav-link" href="adresa">Adrese</a>
+        </li>
+        <li class="re">
+          <a class="nav-link" href="login"><i class="fas fa-user"></i></a>
+        </li>
+        </ul>
+  </div>
+</nav>

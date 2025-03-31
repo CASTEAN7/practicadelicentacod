@@ -1,0 +1,33 @@
+.card-container {
+  margin-top: 50px;  /* Add space at the top */
+  margin-bottom: 50px;  /* Add space at the bottom */
+  display: flex;
+  flex-wrap: wrap;  /* Ensures items wrap to next row */
+  justify-content: center; /* Centers items horizontally */
+  gap: 40px;  /* Adds space between cards */
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;  /* Ensures 3 cards per row */
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center; /* Centers text horizontally */
+}
+
+.card a {
+  text-decoration: none;  /* Removes underline */
+  color: inherit;         /* Inherits the parent color */
+  display: block;         /* Ensures the link covers the entire card */
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}

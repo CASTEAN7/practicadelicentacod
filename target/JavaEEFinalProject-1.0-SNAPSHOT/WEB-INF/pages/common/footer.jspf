@@ -1,0 +1,7 @@
+<%@ page pageEncoding="UTF-8" %>
+<link href="${pageContext.request.contextPath}/service.css" rel="stylesheet" >
+<div class="footer">
+<hr/>
+<center ">Copyright &COPY; 2025 ASEM Spring MVC </center>
+</div>
+

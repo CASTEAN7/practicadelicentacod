@@ -1,0 +1,124 @@
+/* Your existing CSS remains the same */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: flex-end;  /* Aligns the form to the right side */
+    align-items: flex-start;    /* Aligns the form to the top */
+    min-height: calc(100vh - 60px);
+    margin-top: 8%;  /* Keeps the margin from the top */
+    margin-right: 20%;  /* Adds space from the right edge of the screen */
+}
+
+form {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 20px 0; /* Increased space between form elements */
+}
+
+.input-field label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 18px;  /* Increased font size for labels */
+    color: #fff;
+    pointer-events: none;
+    transition: 0.15s ease;
+    padding-top: 10px;  /* Added padding to the top of the label */
+}
+
+.input-field select {
+    width: 100%;
+    height: 35px;  /* Reduced height of the select field */
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    padding-top: 10px;  /* Adjusted padding for better spacing */
+}
+
+.input-field select:focus~label,
+.input-field select:valid~label {
+    font-size: 0.8rem;
+    top: -20px;
+    transform: translateY(-120%);
+}
+
+button {
+    background: #fff;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    color: #fff;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Calendar Styling */
+.calendar-display {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.calendar-display .day,
+.calendar-display .day-name {
+    padding: 10px;
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-display .day.disabled {
+    background-color: #777;
+    cursor: not-allowed;
+}
+
+.calendar-display .day.selected {
+    background-color: #f39c12;
+}
+
+.calendar-display .day:hover:not(.disabled) {
+    background-color: #555;
+}
+
+/* Styling for the days of the week row */
+.calendar-display .day-name {
+    font-weight: bold;
+    background-color: #333;
+}
